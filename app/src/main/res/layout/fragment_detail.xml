@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/iv_menuDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ayam_goreng_detail" />
+
+    <TextView
+        android:id="@+id/tv_namaMenuDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Nama Menu"
+        app:layout_constraintStart_toStartOf="@id/iv_menuDetail"
+        app:layout_constraintTop_toBottomOf="@id/iv_menuDetail" />
+
+    <TextView
+        android:id="@+id/tv_hargaMenuDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/iv_menuDetail"
+        app:layout_constraintTop_toBottomOf="@id/iv_menuDetail"
+        android:text="Harga" />
+
+    <TextView
+        android:id="@+id/tv_deskripsiMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="italic"
+        android:text="Deskripsi"
+        app:layout_constraintStart_toStartOf="@id/tv_namaMenuDetail"
+        app:layout_constraintTop_toBottomOf="@id/tv_namaMenuDetail" />
+
+    <ImageView
+        android:id="@+id/ic_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/store_tujuan"
+        app:layout_constraintStart_toStartOf="@id/tv_namaMenuDetail"
+        app:layout_constraintTop_toBottomOf="@id/tv_deskripsiMenu" />
+
+    <TextView
+        android:id="@+id/tv_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="Lokasi"
+        app:layout_constraintStart_toEndOf="@id/ic_store"
+        app:layout_constraintTop_toTopOf="@id/ic_store" />
+
+    <TextView
+        android:id="@+id/tv_lokasiDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="12sp"
+        android:text="Detail Lokasi"
+        app:layout_constraintStart_toEndOf="@id/ic_store"
+        app:layout_constraintStart_toStartOf="@id/tv_lokasi"
+        app:layout_constraintTop_toBottomOf="@id/ic_store" />
+
+    <Button
+        android:id="@+id/btn_tambahKeranjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tambah Ke Keranjang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ic_store"
+        app:layout_constraintTop_toBottomOf="@id/tv_lokasiDetail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
